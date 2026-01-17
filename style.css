@@ -19,7 +19,7 @@ body {
   line-height: 1.7;
 }
 
-/* GLOBAL SECTIONS */
+/* SECTIONS */
 section {
   max-width: 900px;
   margin: auto;
@@ -27,9 +27,23 @@ section {
 }
 
 /* HERO */
+.hero {
+  background: radial-gradient(
+    circle at top left,
+    rgba(96,165,250,0.15),
+    transparent 40%
+  );
+}
+
 .hero h1 {
   font-size: 3rem;
   line-height: 1.2;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.hero.morphed h1 {
+  transform: scale(0.95);
+  opacity: 0.85;
 }
 
 .hero p {
@@ -50,6 +64,12 @@ section {
   border-radius: 8px;
   margin-right: 12px;
   display: inline-block;
+  transition: all 0.4s ease;
+}
+
+.hero-buttons a:hover {
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(96,165,250,0.25);
 }
 
 .hero-buttons .secondary {
@@ -63,17 +83,48 @@ h2 {
   margin-bottom: 20px;
 }
 
-/* PROJECTS */
+/* PROJECT CARD */
 .project-card {
   background: var(--card);
   padding: 25px;
-  border-radius: 12px;
+  border-radius: 16px;
   margin-bottom: 20px;
-  transition: transform 0.2s ease;
+  transition: all 0.4s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  border-radius: 32px;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(96,165,250,0.15);
+}
+
+/* CASE STUDY */
+.case-study {
+  max-width: 800px;
+}
+
+.case-intro {
+  color: var(--muted);
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+.case-block {
+  background: var(--card);
+  padding: 30px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+
+.case-block:hover {
+  border-radius: 36px;
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(96,165,250,0.15);
+}
+
+.case-block p {
+  color: var(--muted);
 }
 
 /* THINKING */
@@ -92,37 +143,20 @@ h2 {
   color: var(--accent);
   text-decoration: none;
 }
-/* MORPH BASE */
+
+/* REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* MORPH */
 .morph {
-  transition: 
-    border-radius 0.6s ease,
-    transform 0.6s ease,
-    background-color 0.6s ease,
-    box-shadow 0.6s ease;
+  transition: all 0.6s ease;
 }
-
-/* HERO MORPH */
-.hero {
-  background: radial-gradient(
-    circle at top left,
-    rgba(96,165,250,0.15),
-    transparent 40%
-  );
-  border-radius: 0;
-}
-
-.hero.morphed {
-  border-radius: 0 0 60px 60px;
-}
-
-/* PROJECT CARD MORPH */
-.project-card {
-  border-radius: 16px;
-}
-
-.project-card:hover {
-  border-radius: 32px;
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 0 20px 40px rgba(96,165,250,0.15);
-}
-
