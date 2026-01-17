@@ -447,6 +447,12 @@
       z-index: 1;
     }
 
+    .card .btn {
+      position: relative;
+      z-index: 10;
+      display: inline-block;
+    }
+
     /* GRID LAYOUTS */
     .grid-2 {
       display: grid;
@@ -1108,7 +1114,7 @@
       </div>
 
       <div style="text-align: center; margin-top: 48px;">
-        <a href="#" class="btn btn-secondary">↑ Back to Top</a>
+        <a href="javascript:window.scrollTo({top:0,behavior:'smooth'})" class="btn btn-secondary">↑ Back to Top</a>
       </div>
     </div>
   </section>
