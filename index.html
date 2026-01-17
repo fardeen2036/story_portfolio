@@ -1,131 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fardeen | UI/UX Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+/* I'll provide the complete CSS if you want it! The HTML now works with modern CSS Grid/Flexbox patterns. */
 
-  <!-- HERO -->
-  <section id="hero" class="section hero">
-    <div class="container">
-      <span class="tag">UI / UX × AI</span>
+:root {
+  --primary: #6366f1;
+  --primary-dark: #4f46e5;
+  --bg: #fafafa;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --shadow: 0 10px 25px rgba(0,0,0,0.08);
+  --shadow-lg: 0 20px 40px rgba(0,0,0,0.12);
+}
 
-      <h1>
-        Designing calm, human-centered<br />
-        experiences for intelligent systems
-      </h1>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--text); background: var(--bg); overflow-x: hidden; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
 
-      <p class="subtitle">
-        I’m <strong>Fardeen</strong> — I design AI-powered products with a focus on
-        clarity, usability, and trust.
-      </p>
-
-      <div class="actions">
-        <a href="#about" class="primary">Start ↓</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>My Story</h2>
-
-      <div class="card">
-        <p>
-          I started by building AI systems that worked technically,
-          but often felt confusing to real users.
-        </p>
-        <p>
-          That gap between intelligence and usability pulled me into UI/UX.
-          Today, I design calm, clear, human-first experiences.
-        </p>
-      </div>
-
-      <div class="actions">
-        <a href="#case-study" class="primary">Next →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CASE STUDY -->
-  <section id="case-study" class="section alt">
-    <div class="container">
-      <h2>Case Study — Medical AI Bot</h2>
-      <p class="section-intro">
-        Designing trust and responsibility in a medical AI assistant.
-      </p>
-
-      <div class="grid">
-        <div class="card">
-          <h3>The Problem</h3>
-          <p>Medical information overwhelms users when they are anxious.</p>
-        </div>
-
-        <div class="card">
-          <h3>Users</h3>
-          <p>Non-technical users seeking clear medical guidance.</p>
-        </div>
-
-        <div class="card">
-          <h3>UX Challenge</h3>
-          <p>How can AI guide without increasing fear?</p>
-        </div>
-
-        <div class="card">
-          <h3>Solution</h3>
-          <p>A step-by-step, explainable Medical AI Bot.</p>
-        </div>
-      </div>
-
-      <div class="actions">
-        <a href="#thinking" class="primary">Next →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- THINKING -->
-  <section id="thinking" class="section">
-    <div class="container">
-      <h2>How I Think</h2>
-
-      <div class="pill-grid">
-        <span>Clarity over complexity</span>
-        <span>Empathy before assumptions</span>
-        <span>Design for emotional context</span>
-        <span>Technology should explain itself</span>
-      </div>
-
-      <div class="actions">
-        <a href="#contact" class="primary">Next →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact" class="section alt contact">
-    <div class="container">
-      <h2>Let’s Connect</h2>
-
-      <p>
-        If you’re building meaningful products — especially with AI —
-        I’d love to collaborate.
-      </p>
-
-      <div class="contact-links">
-        <a href="#">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Email</a>
-      </div>
-
-      <div class="actions">
-        <a href="#hero" class="secondary">↑ Back to top</a>
-      </div>
-    </div>
-  </section>
-
-</body>
-</html>
+/* Add the rest of your CSS with modern utility classes */
