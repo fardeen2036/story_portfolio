@@ -1,1 +1,95 @@
+:root {
+  --bg: #0f1115;
+  --card: #1a1d23;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+  --accent: #60a5fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+}
+
+/* GLOBAL SECTIONS */
+section {
+  max-width: 900px;
+  margin: auto;
+  padding: 100px 20px;
+}
+
+/* HERO */
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+.hero p {
+  margin-top: 20px;
+  color: var(--muted);
+  max-width: 650px;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.hero-buttons a {
+  text-decoration: none;
+  color: #fff;
+  background: var(--accent);
+  padding: 12px 22px;
+  border-radius: 8px;
+  margin-right: 12px;
+  display: inline-block;
+}
+
+.hero-buttons .secondary {
+  background: transparent;
+  border: 1px solid var(--accent);
+}
+
+/* HEADINGS */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* PROJECTS */
+.project-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* THINKING */
+.thinking ul {
+  list-style: none;
+}
+
+.thinking li {
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+/* CONTACT */
+.contact-links a {
+  margin-right: 15px;
+  color: var(--accent);
+  text-decoration: none;
+}
 
