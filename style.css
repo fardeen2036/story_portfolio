@@ -92,4 +92,37 @@ h2 {
   color: var(--accent);
   text-decoration: none;
 }
+/* MORPH BASE */
+.morph {
+  transition: 
+    border-radius 0.6s ease,
+    transform 0.6s ease,
+    background-color 0.6s ease,
+    box-shadow 0.6s ease;
+}
+
+/* HERO MORPH */
+.hero {
+  background: radial-gradient(
+    circle at top left,
+    rgba(96,165,250,0.15),
+    transparent 40%
+  );
+  border-radius: 0;
+}
+
+.hero.morphed {
+  border-radius: 0 0 60px 60px;
+}
+
+/* PROJECT CARD MORPH */
+.project-card {
+  border-radius: 16px;
+}
+
+.project-card:hover {
+  border-radius: 32px;
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 20px 40px rgba(96,165,250,0.15);
+}
 
